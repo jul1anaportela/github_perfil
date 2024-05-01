@@ -1,0 +1,33 @@
+function App() {
+  //variáveis
+  const nome = "juliana";
+
+  //funções
+  function retornaNome() {
+    return nome;
+  }
+
+  //acessar atributos de objetos
+  const pessoa = {
+    nome: "Maria"
+  }
+
+  let estaDeDia = false;
+
+  return (
+
+<>
+    <h1>Hello world! {nome}</h1>
+    <h2>subtitulo</h2>
+    <span>{retornaNome()}</span> 
+    <br />
+    <span>{pessoa.nome}</span>
+    <br />
+    {/* {estaDeDia === true ? 'Bom dia' : 'Boa tarde'}  */}
+    {estaDeDia ? 'Bom dia' : 'Boa tarde'}
+</>
+
+  )
+}
+
+export default App
